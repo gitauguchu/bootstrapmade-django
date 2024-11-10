@@ -1,0 +1,105 @@
+{%   extends 'layout.html'   %}
+
+{%   load static   %}
+
+{%   block body   %}
+
+<main class="main">
+
+  <!-- Page Title -->
+  <div class="page-title light-background">
+    <div class="container">
+      <h1>Blog Posts</h1>
+      <nav class="breadcrumbs">
+        <ol>
+          <li><a href="/">Home</a></li>
+          <li class="current">Blog</li>
+        </ol>
+      </nav>
+    </div>
+  </div><!-- End Page Title -->
+
+  <!-- Blog Posts 2 Section -->
+  <section id="blog-posts-2" class="blog-posts-2 section">
+
+    <div class="container">
+
+      <div class="row gy-5">
+
+        <div class="col-lg-4 col-md-6">
+          <article>
+
+            <div class="post-img">
+              <img src="{%   static 'assets/img/azure_project.webp'   %}" alt="" class="img-fluid">
+            </div>
+
+            <div class="meta-top">
+              <ul>
+                <li class="d-flex align-items-center"><a href="https://medium.com/@gitauguchu/premier-league-data-pipeline-on-azure-automated-using-github-actions-0f001c94e8a7">Data Engineering</a></li>
+                <li class="d-flex align-items-center"><i class="bi bi-dot"></i> <a href="https://medium.com/@gitauguchu/premier-league-data-pipeline-on-azure-automated-using-github-actions-0f001c94e8a7"><time datetime="2024-10-25">October 25, 2024</time></a></li>
+              </ul>
+            </div>
+
+            <h2 class="title">
+              <a href="https://medium.com/@gitauguchu/premier-league-data-pipeline-on-azure-automated-using-github-actions-0f001c94e8a7">Premier League Data Pipeline on Azure Automated using GitHub Actions</a>
+            </h2>
+
+          </article>
+        </div><!-- End post list item -->
+
+        <div class="col-lg-4 col-md-6">
+
+          <article>
+
+            <div class="post-img">
+              <img src="{%   static 'assets/img/talent_chains.jpg'   %}" alt="" class="img-fluid">
+            </div>
+
+            <div class="meta-top">
+              <ul>
+                <li class="d-flex align-items-center"><a href="https://medium.com/@gitauguchu/realising-my-talent-0b5f0df707a2">Life</a></li>
+                <li class="d-flex align-items-center"><i class="bi bi-dot"></i> <a href="https://medium.com/@gitauguchu/realising-my-talent-0b5f0df707a2"><time datetime="2024-10-20">October 20, 2024</time></a></li>
+              </ul>
+            </div>
+
+            <h2 class="title">
+              <a href="https://medium.com/@gitauguchu/realising-my-talent-0b5f0df707a2">Realising my Talent!</a>
+            </h2>
+
+          </article>
+
+        </div><!-- End post list item -->
+
+        <div class="col-lg-4 col-md-6">
+
+          <article>
+
+            <div class="post-img">
+              <img src="{%   static 'assets/img/mansion.jfif'   %}" alt="" class="img-fluid">
+            </div>
+
+            <div class="meta-top">
+              <ul>
+                <li class="d-flex align-items-center"><a href="https://medium.com/@gitauguchu/nairobi-house-price-prediction-4df31194b7b2">Data Analysis</a></li>
+                <li class="d-flex align-items-center"><i class="bi bi-dot"></i> <a href="https://medium.com/@gitauguchu/nairobi-house-price-prediction-4df31194b7b2"><time datetime="2024-08-01">August 1, 2024</time></a></li>
+              </ul>
+            </div>
+
+            <h2 class="title">
+              <a href="https://medium.com/@gitauguchu/nairobi-house-price-prediction-4df31194b7b2">Nairobi House Price Prediction</a>
+            </h2>
+
+          </article>
+
+        </div><!-- End post list item -->
+
+      </div><!-- End blog posts list -->
+
+    </div>
+
+  </section><!-- /Blog Posts 2 Section -->
+
+</main>
+
+{%   endblock   %}
+

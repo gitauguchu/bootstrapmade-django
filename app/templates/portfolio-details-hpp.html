@@ -1,0 +1,99 @@
+{%   extends 'layout.html'   %}
+
+{%   load static   %}
+
+{%   block body   %}
+
+<main class="main">
+
+  <!-- Page Title -->
+  <div class="page-title light-background">
+    <div class="container">
+      <h1>Portfolio Details</h1>
+      <nav class="breadcrumbs">
+        <ol>
+          <li><a href="/">Home</a></li>
+          <li class="current">Portfolio Details</li>
+        </ol>
+      </nav>
+    </div>
+  </div><!-- End Page Title -->
+
+  <!-- Portfolio Details Section -->
+  <section id="portfolio-details" class="portfolio-details section">
+
+    <div class="container" data-aos="fade-up">
+
+      <div class="portfolio-details-slider swiper init-swiper">
+        <script type="application/json" class="swiper-config">
+          {
+            "loop": true,
+            "speed": 600,
+            "autoplay": {
+              "delay": 5000
+            },
+            "slidesPerView": "auto",
+            "navigation": {
+              "nextEl": ".swiper-button-next",
+              "prevEl": ".swiper-button-prev"
+            },
+            "pagination": {
+              "el": ".swiper-pagination",
+              "type": "bullets",
+              "clickable": true
+            }
+          }
+        </script>
+        <div class="swiper-wrapper align-items-center">
+
+          <div class="swiper-slide">
+            <img src="{%   static 'assets/img/house_project.webp'   %}" alt="">
+          </div>
+
+          <div class="swiper-slide">
+            <img src="{%   static 'assets/img/mansion.jfif'   %}" alt="">
+          </div>
+
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <div class="row justify-content-between gy-4 mt-4">
+
+        <div class="col-lg-8" data-aos="fade-up">
+          <div class="portfolio-description">
+            <h2>House Price Prediction Project</h2>
+            <p>
+              This is a data analysis project that starts by scrapping data from buyrentkenya.co.ke using BeautifulSoup and then cleaning of the data and then conducting some EDA and then building a maachine learning model that 
+              actually predicts the prices of houses based on their location, total square feet, number of bedrooms and number of bathrooms.
+            </p>
+            <p>
+              Technologies used: Python, BeautifulSoup, EDA
+            </p>
+
+          </div>
+        </div>
+
+        <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="portfolio-info">
+            <h3>Project information</h3>
+            <ul>
+              <li><strong>Category</strong> Data Analysis</li>
+              <li><strong>Project date</strong> May, 2024</li>
+              <li><strong>Project URL</strong> <a href="https://github.com/gitauguchu/Nairobi-House-Price-Prediction">Nairobi House Price Prediction</a></li>
+              <li><a href="https://github.com/gitauguchu/Nairobi-House-Price-Prediction" class="btn-visit align-self-start">Visit GitHub</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section><!-- /Portfolio Details Section -->
+
+</main>
+
+{%   endblock   %}

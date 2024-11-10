@@ -1,0 +1,289 @@
+{%   extends 'layout.html'   %}
+
+{%   load static   %}
+
+{%   block body   %}
+
+<main class="main">
+
+  <!-- About Section -->
+  <section id="about" class="about section">
+
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-lg-7 mb-5 mb-lg-0 order-lg-1" data-aos="fade-up" data-aos-delay="400">
+          <div class="swiper init-swiper">
+            <script type="application/json" class="swiper-config">
+              {
+                "loop": true,
+                "speed": 600,
+                "autoplay": {
+                  "delay": 5000
+                },
+                "slidesPerView": "auto",
+                "pagination": {
+                  "el": ".swiper-pagination",
+                  "type": "bullets",
+                  "clickable": true
+                },
+                "breakpoints": {
+                  "320": {
+                    "slidesPerView": 1,
+                    "spaceBetween": 40
+                  },
+                  "1200": {
+                    "slidesPerView": 1,
+                    "spaceBetween": 1
+                  }
+                }
+              }
+            </script>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="{%   static 'assets/img/pascal.jpg'   %}" alt="Image" class="img-fluid">
+              </div>
+              <div class="swiper-slide">
+                <img src="{%   static 'assets/img/samsung1.jpg'   %}" alt="Image" class="img-fluid">
+              </div>
+              <div class="swiper-slide">
+                <img src="{%   static 'assets/img/samsung2.jpg'   %}" alt="Image" class="img-fluid">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <div class="col-lg-4 order-lg-2">
+          <span class="section-subtitle" data-aos="fade-up">Welcome</span>
+          <h1 class="mb-4" data-aos="fade-up">
+            This is the home page of my bootstrapmade project hosted on django
+          </h1>
+          <p data-aos="fade-up">
+            I am an accomplished data scientist delving into the world of web development.
+            This is aimed at making me a full stack data professional with a good understanding of the whole data eco-system
+            from end-to-end.
+            I am also interested in gaining understanding of backend since I am intrigued by anything that involves the use of logic.
+            I will also be able to do gigs involving backend and get some extra money while at it.
+          </p>
+          <p class="mt-5" data-aos="fade-up">
+            <a href="#" class="btn btn-outline-success">Get Started</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section><!-- /About Section -->
+
+  <!-- About 2 Section -->
+  <section id="about-2" class="about-2 section light-background">
+
+    <div class="container">
+      <div class="content">
+        <div class="row justify-content-center">
+          <div class="col-sm-12 col-md-5 col-lg-4 col-xl-4 order-lg-2 offset-xl-1 mb-4">
+            <div class="img-wrap text-center text-md-left" data-aos="fade-up" data-aos-delay="100">
+              <div class="img">
+                <img src="{%   static 'assets/img/shutter-speed.jpg'   %}" alt="circle image" class="img-fluid">
+              </div>
+            </div>
+          </div>
+
+          <div class="offset-md-0 offset-lg-1 col-sm-12 col-md-5 col-lg-5 col-xl-4" data-aos="fade-up">
+            <div class="px-3">
+              <span class="content-subtitle">My Mission</span>
+              <h2 class="content-title text-start">
+                The intersection between data, tech and music!
+              </h2>
+              <p class="lead">
+                I aim to leverage my talent in math to get extremely good in machine learning and find the intersection between that
+                and music. In simple terms I would like to be a machine learning engineer at a music tech company, specifically Spotify!
+                Inshallah!
+              </p>
+              <p>
+                <a href="https://open.spotify.com/user/fzod7867h7gw49rywfjhyxhdc?si=0cf293a349314587" class="btn-get-started" style="color: black;">Add my Spotify</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- /About 2 Section -->
+
+  <!-- Services Section -->
+  <section id="services" class="services section light-background">
+
+    <div class="container">
+      <div class="row gy-4 justify-content-center">
+
+        <div class="col-lg-3">
+          <div class="services-item" data-aos="fade-up">
+            <div class="services-icon">
+              <i class="bi bi-bullseye"></i>
+            </div>
+            <div>
+              <h3>Data Science</h3>
+              <p>Comprizes the delicate art of statistics and technology.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3">
+          <div class="services-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="services-icon">
+              <i class="bi bi-command"></i>
+            </div>
+            <div>
+              <h3>Machine Learning</h3>
+              <p>Contained in the vast world of AI. Specifically interested in Reinforced Learning.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3">
+          <div class="services-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="services-icon">
+              <i class="bi bi-bar-chart"></i>
+            </div>
+            <div>
+              <h3>Data Engineering</h3>
+              <p>Involves the ETL process that is, extraction, transformation and loading of data into databases e.t.c</p>
+            </div>
+         </div>
+       </div>
+
+       
+       <div class="col-lg-3">
+        <div class="services-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="services-icon">
+            <i class="bi bi-chevron-left"></i>
+          </div>
+          <div>
+            <h3>Web Development</h3>
+            <p>Interested in python, django. Wanna challenge my logical thinking!</p>
+          </div>
+       </div>
+     </div>
+  </section><!-- /Services Section -->
+
+  <!-- Stats Section -->
+  <section id="stats" class="stats section light-background">
+
+    <div class="container">
+
+      <div class="row gy-4 justify-content-center">
+
+        <div class="col-lg-5">
+          <div class="images-overlap">
+            <img src="{%   static 'assets/img/img_v_1.jpg'   %}" alt="student" class="img-fluid img-1" data-aos="fade-up">
+          </div>
+        </div>
+
+        <div class="col-lg-4 ps-lg-5">
+          <span class="content-subtitle">Path to greatness</span>
+          <h2 class="content-title">The 10,000 Hour Rule</h2>
+          <p class="lead">
+            I aim to clock my 10,000 hours of practice aimed towards getting better at my craft. Doing that in a valid environment, with many repetitions, timely feedback and deliberate practice,
+            I will surely get to where I want
+          </p>
+          <div class="row mb-5 count-numbers">
+
+            <!-- Start Stats Item -->
+            <div class="col-4 counter" data-aos="fade-up" data-aos-delay="100">
+              <span data-purecounter-separator="true" data-purecounter-start="0" data-purecounter-end="2699" data-purecounter-duration="1" class="purecounter number"></span>
+              <span class="d-block">Coffees</span>
+            </div>
+            <!-- End Stats Item -->
+
+            <!-- Start Stats Item -->
+            <div class="col-4 counter" data-aos="fade-up" data-aos-delay="200">
+              <span data-purecounter-separator="true" data-purecounter-start="0" data-purecounter-end="10001" data-purecounter-duration="1" class="purecounter number"></span>
+              <span class="d-block">Codes</span>
+            </div>
+            <!-- End Stats Item -->
+
+            <!-- Start Stats Item -->
+            <div class="col-4 counter" data-aos="fade-up" data-aos-delay="300">
+              <span data-purecounter-separator="true" data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1" class="purecounter number"></span>
+              <span class="d-block">Projects</span>
+            </div>
+            <!-- End Stats Item -->
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- /Stats Section -->
+
+  <!-- Blog Posts Section -->
+  <section id="blog-posts" class="blog-posts section">
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <p>Recent Posts</p>
+      <h2>My Medium Blog</h2>
+    </div><!-- End Section Title -->
+    <div class="container">
+
+      <div class="row gy-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="post-entry" data-aos="fade-up" data-aos-delay="100">
+            <a href="https://medium.com/@gitauguchu/premier-league-data-pipeline-on-azure-automated-using-github-actions-0f001c94e8a7" class="thumb d-block"><img src="{%   static 'assets/img/azure_project.webp'   %}" alt="Image" class="img-fluid rounded"></a>
+
+            <div class="post-content">
+              <div class="meta">
+                <a href="#" class="cat">Data Engineering</a> •
+                <span class="date">October 25, 2024</span>
+              </div>
+              <h3><a href="#">Azure Data Engineering Project</a></h3>
+              <p>
+                In this article, I describe my project on building a ETL pipeline on Microsoft Azure
+              </p>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="post-entry" data-aos="fade-up" data-aos-delay="200">
+            <a href="https://medium.com/@gitauguchu/realising-my-talent-0b5f0df707a2" class="thumb d-block"><img src="{%   static 'assets/img/talent_article.jpg'   %}" alt="Image" class="img-fluid rounded"></a>
+
+            <div class="post-content">
+              <div class="meta">
+                <a href="#" class="cat">Life</a> •
+                <span class="date">October 20, 2024</span>
+              </div>
+              <h3><a href="#">Things happening in my life</a></h3>
+              <p>
+                In this article, I write about how on a random Thursday afternoon I realized my talent!
+              </p>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="post-entry" data-aos="fade-up" data-aos-delay="300">
+            <a href="https://medium.com/@gitauguchu/nairobi-house-price-prediction-4df31194b7b2" class="thumb d-block"><img src="{%   static 'assets/img/house_project.webp'   %}" alt="Image" class="img-fluid rounded"></a>
+
+            <div class="post-content">
+              <div class="meta">
+                <a href="#" class="cat">Data Analytics</a> •
+                <span class="date">August 1, 2024</span>
+              </div>
+              <h3><a href="#">Data Science/Analytics project</a></h3>
+              <p>
+                In this article, I describe how I scrapped data, cleaned it and ensured consistency and then proceeded to building
+                a machine learning model that predicts house prices based on location and other determining factors.
+              </p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- /Blog Posts Section -->
+
+
+</main>
+
+{%   endblock   %}
+
